@@ -22,7 +22,4 @@ app.use('/people', peopleController)
 
 //root - home /index route for api - redirects to the people index
 app.get('/', (req,res)=> res.redirect('/people'))
-
-
-
 app.listen(PORT, () => console.log('Listening on port: ${PORT}'))
